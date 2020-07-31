@@ -5,6 +5,7 @@ const randNumber = ()=>{
     const getNumber = document.getElementById('getNumber').value;
 
     console.log(getNumber);
+    
 
     if (getNumber === ''){
         alert ('Please enter a value');
