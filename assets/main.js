@@ -5,14 +5,14 @@ const randNumber = ()=>{
     const getNumber = document.getElementById('getNumber').value;
 
     console.log(getNumber);
-    
+
 
     if (getNumber === ''){
-        alert ('Please enter a value');
+        alert ('You did not enter a valid number');
        } else if (getNumber < 0) {
-         alert ('Please enter a value greater than 0');
+         alert ('Please enter a number between 0 and 255');
        } else if (getNumber > 255) {
-        alert ('Please enter a value between 0 and 255');
+        alert ('Please enter a number between 0 and 255');
        }else {
         var number_one = Math.floor(Math.random() * getNumber);
         var number_two = Math.floor(Math.random() * getNumber);
@@ -22,4 +22,5 @@ const randNumber = ()=>{
         coloredText.textContent = `rgb(${number_one}, ${number_two}, ${number_three})`;
        }
 }
+//This is an Event listener for btn
 btn.addEventListener('click', randNumber)

@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>RGB Generator</title>
-    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>RGB | Generator</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles.css">
     <link rel="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--AOS CSS-->
+	<link href="./assets/aos.css" rel="stylesheet">
 </head>
 <body>
-    <div id="circle"></div>
-    <div class="container">
-        <h1>Generate RGB</h1>
-        <p>This is a task that gets input and changes the background color of the shape above. Give it a try</p>
-        <p id="coloredText"></p>
+    <div style="margin-top: 20px; margin-bottom: 10px;" data-aos="flip-up" data-aos-delay="500" id="circle"></div>
+    <div data-aos="zoom-out" data-aos-delay="1000" class="container">
+        <h1 style="color: white;">Generate RGB</h1>
+        <p style="color: white">This is a task that gets input and changes the background color of the shape above. Give it a try</p>
+        <p style="color: white;" id="coloredText"></p>
         <br>
-        
+
         <input id="getNumber" type="num" placeholder="Enter a number from 0 to 255">
 
-        <button id="btn">Submit</button>
+        <button id="btn">Generate</button>
     </div>
+    <footer>
+        <p style="text-align: center; font-size: 20px; ">Made by Damilare Oyetade</p>
+     
+    </footer>
+     <script src="./assets/main.js"></script>
 
+     <!--AOS JS CDN-->
+	<script src="./assets/aos.js"></script>
 
-    <script src="./main.js"></script>
+	<!--AOS-->
+	<script>
+		AOS.init();
+	</script>
 </body>
 </html>
